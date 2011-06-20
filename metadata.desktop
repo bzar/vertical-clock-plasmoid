@@ -1,0 +1,20 @@
+[Desktop Entry]
+Name=Vertical Clock
+Comment=A clock suitable for vertical panels
+Icon=chronometer
+
+X-Plasma-API=declarativeappletscript
+X-Plasma-MainScript=qml/main.qml
+X-Plasma-DefaultSize=64,160
+
+X-KDE-PluginInfo-Author=Teemu Erkkola
+X-KDE-PluginInfo-Email=teemu.erkkola@iki.fi
+X-KDE-PluginInfo-Category=Date end Time
+X-KDE-PluginInfo-Name=fi.iki.bzar.vertical-clock
+X-KDE-PluginInfo-Version=0.1
+
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-ServiceTypes=Plasma/Applet
+Type=Service
