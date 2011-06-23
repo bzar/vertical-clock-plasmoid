@@ -34,7 +34,7 @@ Item {
         onTriggered: {
             var date = new Date;
             year = date.getFullYear();
-            month = date.getMonth();
+            month = date.getMonth() + 1;
             day = date.getDate();
             weekday = date.getDay();
             hour = date.getHours();
