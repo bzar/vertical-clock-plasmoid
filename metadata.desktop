@@ -5,7 +5,7 @@ Icon=chronometer
 
 X-Plasma-API=declarativeappletscript
 X-Plasma-MainScript=qml/main.qml
-X-Plasma-DefaultSize=64,160
+X-Plasma-DefaultSize=64,96
 
 X-KDE-PluginInfo-Author=Teemu Erkkola
 X-KDE-PluginInfo-Email=teemu.erkkola@iki.fi
