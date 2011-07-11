@@ -2,6 +2,9 @@ import Qt 4.7
 import org.kde.plasma.graphicswidgets 0.1 as PlasmaWidgets
 
 Item {
+    height: column.childrenRect.height
+    width: column.childrenRect.width
+    
     Timer {
         id: time
         property int year
@@ -43,6 +46,7 @@ Item {
     }
 
     Column {
+        id: column
         anchors.fill: parent
 
         Text {
