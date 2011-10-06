@@ -2,8 +2,8 @@ import Qt 4.7
 import org.kde.plasma.graphicswidgets 0.1 as PlasmaWidgets
 
 Item {
-    height: column.childrenRect.height
-    width: column.childrenRect.width
+    property int minimumHeight: column.childrenRect.height
+    property int minimumWidth: column.childrenRect.width
     
     Timer {
         id: time
