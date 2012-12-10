@@ -1,9 +1,14 @@
-import Qt 4.7
-import org.kde.plasma.graphicswidgets 0.1 as PlasmaWidgets
+import QtQuick 1.1
+import org.kde.plasma.core 0.1 as PlasmaCore
+import org.kde.plasma.components 0.1 as PlasmaComponents
 
 Item {
     property int minimumHeight: column.childrenRect.height
     property int minimumWidth: column.childrenRect.width
+    
+    PlasmaCore.Theme {
+      id: plasmaTheme
+    }
     
     Timer {
         id: time
@@ -55,7 +60,7 @@ Item {
 
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: 24
-            color: "#eee"
+            color: plasmaTheme.textColor
 
             text: time.zeroPad(time.hour, 2)
         }
@@ -65,7 +70,7 @@ Item {
 
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: 24
-            color: "#eee"
+            color: plasmaTheme.textColor
 
             text: time.zeroPad(time.minute, 2)
         }
@@ -75,7 +80,7 @@ Item {
 
             verticalAlignment: Text.AlignVCenter
             font.pixelSize: 12
-            color: "#eee"
+            color: plasmaTheme.textColor
 
             text: time.zeroPad(time.day, 2) + "." + time.zeroPad(time.month, 2) + "."
         }
